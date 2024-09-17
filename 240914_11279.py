@@ -64,7 +64,7 @@ heap = [0]
 N = int(sys.stdin.readline())
 
 for i in range(N):
-    x = sys.stdin.readline(input())
+    x = int(sys.stdin.readline())
     if x == 0:
         if len(heap) == 1: print("0")
         else: heap_pop(heap)
