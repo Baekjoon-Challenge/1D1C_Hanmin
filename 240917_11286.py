@@ -12,10 +12,10 @@ for i in range(N):
 
     else:
         if not abs_heap:
-            print("0 :")
+            print("0")
         else:
             v = heapq.heappop(abs_heap)[1]
-            print(v,":")
+            print(v)
 
 
 
