@@ -17,5 +17,4 @@ for i in range(1,n):
             graph[i][j] += max(graph[i-1][j],graph[i-1][j-1])
 
 
-print(graph)
 print(max(graph[n-1]))
