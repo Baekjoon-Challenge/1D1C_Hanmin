@@ -8,6 +8,9 @@ for i in range(n):
     graph.append(list(sys.stdin.readline().rstrip()))
 
 
+
+dy = [1,-1,0,0]
+dx = [0,0,1,-1]
 def bfs(graph, y, x):
     visited = [[-1 for i in range(m)] for j in range(n)]
     queue = deque()
@@ -17,8 +20,6 @@ def bfs(graph, y, x):
     while queue:
         v = queue.popleft()
 
-        dy = [1,-1,0,0]
-        dx = [0,0,1,-1]
         for i in range(4):
             ny = v[0]+dy[i]
             nx = v[1]+dx[i]
@@ -34,8 +35,7 @@ for i in range(n):
     for j in range(m):
         if graph[i][j] == 'L':
             max_cnt = max(max_cnt,bfs(graph,i,j))
-    if max_cnt == n+m-2:
-        break
+
         
 
 print(max_cnt)
