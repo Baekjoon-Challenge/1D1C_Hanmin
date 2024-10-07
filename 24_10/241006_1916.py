@@ -36,7 +36,7 @@ def dijkstra(start,end):
         visited[index] = True
         for j in graph[index]:
             distance[j[0]] = min(distance[index] + j[1],distance[j[0]])
-        print(distance)
+        
 
 
 
