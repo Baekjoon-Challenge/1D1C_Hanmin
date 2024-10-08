@@ -36,9 +36,9 @@ way1+=dijkstra(second,n)
 
 
 way2 = 0
-way2+=dijkstra(1,first)
-way2+=dijkstra(first,second)
-way2+=dijkstra(second,n)
+way2+=dijkstra(1,second)
+way2+=dijkstra(second,first)
+way2+=dijkstra(first,n)
 
 ans = min(way1,way2)
 if ans >= inf:
