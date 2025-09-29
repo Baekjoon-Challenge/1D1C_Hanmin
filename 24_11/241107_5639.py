@@ -1,4 +1,5 @@
 import sys
+sys.setrecursionlimit(10**6)
 
 class Node:
     def __init__(self,data):
