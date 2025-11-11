@@ -12,5 +12,5 @@ for i in range(10):
         else:
             view_cnt += (building_list[j]-max_near)
 
-    print("#%d %d" %(i,view_cnt))
+    print("#%d %d" %(i+1,view_cnt))
         
